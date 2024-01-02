@@ -1,3 +1,3 @@
-import concatArrays from './5-spread-operator.js';
+import getBudgetForCurrentYear from './8-getBudgetCurrentYear.js';
 
-console.log(concatArrays(['a', 'b'], ['c', 'd'], 'Hello'));
+console.log(getBudgetForCurrentYear(2100, 5200, 1090));
