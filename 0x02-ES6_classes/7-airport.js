@@ -1,7 +1,7 @@
 export default class Airport {
   constructor(name, code) {
-    this._name = name;
-    this._code = code;
+    if (typeof name === 'string') this._name = name;
+    if (typeof name === 'string') this._code = code;
   }
 
   get code() {
@@ -9,6 +9,6 @@ export default class Airport {
   }
 
   toString() {
-    return `[${this._code}] { _name: '${this._name}', _code: '${this._code}' }`;
+    return `[Object ${this.code}]`;
   }
 }
